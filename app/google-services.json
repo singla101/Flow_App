@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "119193007110",
+    "project_id": "smarthome-gwtf",
+    "storage_bucket": "smarthome-gwtf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119193007110:android:e1a1aaaa0475a6ca50ff87",
+        "android_client_info": {
+          "package_name": "com.gwtf.flow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119193007110-f7cr3ebkuu557ms6r0h1dfgbkdgn098u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAryVAjrWzJSqgPQofKS41ez7CrhAZ6j-Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "119193007110-f7cr3ebkuu557ms6r0h1dfgbkdgn098u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119193007110:android:0696903bcadb9d5f50ff87",
+        "android_client_info": {
+          "package_name": "com.gwtf.smarthome"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119193007110-f7cr3ebkuu557ms6r0h1dfgbkdgn098u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAryVAjrWzJSqgPQofKS41ez7CrhAZ6j-Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "119193007110-f7cr3ebkuu557ms6r0h1dfgbkdgn098u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

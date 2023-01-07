@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/shape_card"
+    android:backgroundTint="@color/black"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_close"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_business"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/lexend_regular"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="?android:attr/listDivider" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_business"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/background_extra_light" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_add_business"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_button"
+        android:fontFamily="@font/lexend_medium"
+        android:text="@string/add_new_business"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:drawableStart="@drawable/ic_add"
+        android:drawableTint="@color/background"
+        android:gravity="center"
+        android:textColor="@color/black" />
+
+
+</LinearLayout>

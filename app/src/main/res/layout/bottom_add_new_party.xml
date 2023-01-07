@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/shape_card"
+    android:backgroundTint="@color/black"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:windowSoftInputMode="adjustResize"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_close"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/lexend_regular"
+            android:text="@string/add_manually"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/party_name"
+        android:fontFamily="@font/lexend_regular"
+        android:alpha=".5"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/txt_partyName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_textbox"
+        android:paddingStart="15dp"
+        android:layout_marginTop="5dp"
+        android:paddingEnd="15dp"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/lexend_regular"
+        android:hint="@string/party_name"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/mobile_number"
+        android:fontFamily="@font/lexend_regular"
+        android:alpha=".5"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/txt_mobileNumber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_textbox"
+        android:paddingStart="15dp"
+        android:layout_marginTop="5dp"
+        android:paddingEnd="15dp"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/lexend_regular"
+        android:hint="@string/mobile_number_optional"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/email"
+        android:fontFamily="@font/lexend_regular"
+        android:alpha=".5"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/txt_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_textbox"
+        android:paddingStart="15dp"
+        android:layout_marginTop="5dp"
+        android:paddingEnd="15dp"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/lexend_regular"
+        android:hint="@string/email_optional"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/party_type"
+        android:fontFamily="@font/lexend_regular"
+        android:alpha=".5"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btn_customer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:strokeColor="#482196F3"
+            app:cardCornerRadius="40dp"
+            app:strokeWidth="0dp"
+            android:backgroundTint="#482196F3">
+
+            <TextView
+                android:id="@+id/customerTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/customer"
+                android:textColor="@color/black"
+                android:paddingStart="15dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="15dp"
+                android:textSize="10sp"
+                android:fontFamily="@font/lexend_light"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btn_supplier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:strokeColor="#482196F3"
+            app:cardCornerRadius="40dp"
+            android:layout_marginStart="10dp"
+            app:strokeWidth="0dp"
+            android:backgroundTint="#482196F3">
+
+            <TextView
+                android:id="@+id/supplierTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/supplier"
+                android:textColor="@color/black"
+                android:paddingStart="15dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="15dp"
+                android:textSize="10sp"
+                android:fontFamily="@font/lexend_light"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="?android:attr/listDivider" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_add_book"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_button"
+        android:fontFamily="@font/lexend_medium"
+        android:text="@string/add_party"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:drawableTint="@color/background"
+        android:gravity="center"
+        android:textColor="@color/black" />
+
+
+</LinearLayout>

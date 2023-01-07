@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.gwtf.flow.MainActivity">
+    <item
+        android:id="@+id/nav_home"
+        android:title="Cashbook"
+        android:icon="@drawable/ic_book"
+        />
+
+    <item
+        android:id="@+id/nav_money"
+        android:title="Store"
+        android:icon="@drawable/ic_shop"
+        />
+
+    <item
+        android:id="@+id/action_settings"
+        android:title="Settings"
+        android:icon="@drawable/ic_gear"
+        />
+</menu>

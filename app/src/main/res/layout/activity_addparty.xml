@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingStart="20dp"
+        android:background="@color/background"
+        android:gravity="center"
+        android:paddingEnd="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:layout_gravity="center"
+            app:tint="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/choose_party"
+                android:fontFamily="@font/lexend_medium"
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_gear"/>
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/txt_amount"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:singleLine="true"
+                android:inputType="number"
+                android:background="@drawable/shape_textbox"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginStart="20dp"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/lexend_regular"
+                android:hint="@string/amount"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/btn_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/shape_textbox"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_calendar"/>
+
+                        <TextView
+                            android:id="@+id/txt_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="28/12/2022"
+                            android:textSize="16sp"
+                            android:layout_marginStart="10dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/lexend_regular"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/btn_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/shape_textbox"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_time"/>
+
+                        <TextView
+                            android:id="@+id/txt_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="28/12/2022"
+                            android:textSize="16sp"
+                            android:layout_marginStart="10dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/lexend_regular"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_details"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/txt_partyName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:singleLine="true"
+                    android:background="@drawable/shape_textbox"
+                    android:paddingStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:drawableEnd="@drawable/ic_down"
+                    android:paddingEnd="15dp"
+                    android:layout_marginStart="20dp"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="20dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/lexend_regular"
+                    android:hint="@string/party_name_contact"
+                    />
+
+                <EditText
+                    android:id="@+id/txt_remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/shape_textbox"
+                    android:paddingStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:singleLine="true"
+                    android:inputType="text"
+                    android:drawableEnd="@drawable/ic_down"
+                    android:paddingEnd="15dp"
+                    android:layout_marginStart="20dp"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="20dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/lexend_regular"
+                    android:hint="@string/remark_item_person_name_quantitty"
+                    />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/list_Remark"
+                    android:layout_width="match_parent"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:id="@+id/txt_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/shape_textbox"
+                    android:paddingStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:drawableEnd="@drawable/ic_down"
+                    android:paddingEnd="15dp"
+                    android:layout_marginStart="20dp"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="20dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/lexend_regular"
+                    android:hint="@string/category"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="@string/payment_mode"
+                    android:fontFamily="@font/lexend_regular"
+                    android:alpha=".5"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/list_PaymentMode"
+                    android:layout_width="match_parent"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:padding="20dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_button"
+            android:text="@string/save"
+            android:textColor="@color/black"
+            android:fontFamily="@font/lexend_medium"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light"
+    android:orientation="vertical"
+    tools:context=".BookActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingStart="20dp"
+        android:background="@color/background"
+        android:gravity="center"
+        android:paddingEnd="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:layout_gravity="center"
+            app:tint="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/entry_details"
+                android:fontFamily="@font/lexend_medium"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/manage_your_entry_details"
+                android:fontFamily="@font/lexend_regular"
+                android:alpha=".5"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/moreBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_more" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="15dp"
+                app:cardBackgroundColor="@color/background"
+                android:elevation="0dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/entryType"
+                        android:layout_width="match_parent"
+                        android:background="#4CAF50"
+                        android:layout_height="5dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/entryTypeTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Cash In"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/lexend_light"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:id="@+id/dateTimeTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="On Sat 31 Dec 12: 29 PM"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/lexend_medium"
+                            android:gravity="end"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/paymentTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="74"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:fontFamily="@font/lexend_medium"
+                        android:layout_weight="1"/>
+
+                    <View
+                        android:id="@+id/divider2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="?android:attr/listDivider" />
+
+                    <TextView
+                        android:id="@+id/customerNameTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Customer Name"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:layout_margin="15dp"
+                        android:fontFamily="@font/lexend_medium"/>
+
+                    <TextView
+                        android:id="@+id/numberTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(Customer)"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/lexend_light"/>
+
+                    <TextView
+                        android:id="@+id/remarkTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hello World!!!"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/lexend_light"/>
+
+                    <TextView
+                        android:id="@+id/mode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/shape_button"
+                        android:backgroundTint="#663585C7"
+                        android:fontFamily="@font/lexend_regular"
+                        android:gravity="center"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginStart="15dp"
+                        android:singleLine="true"
+                        android:text="Paytm"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="?android:attr/listDivider" />
+
+                    <TextView
+                        android:id="@+id/txt_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:text="@string/edit_entry"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/lexend_regular"
+                        android:drawableStart="@drawable/ic_edit"
+                        android:gravity="center"
+                        android:drawablePadding="15dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_extra_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/shareButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:fontFamily="@font/lexend_regular"
+            android:text="@string/share_entry"
+            android:background="@drawable/shape_button"
+            android:backgroundTint="#4CAF50"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

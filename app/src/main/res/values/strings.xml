@@ -1,0 +1,221 @@
+<resources>
+    <string name="app_name" translatable="false">Flow</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="about_us">About Us</string>
+    <string name="add_business_name">Add Business Name</string>
+    <string name="enter_business_name">Enter Business Name</string>
+    <string name="business_setup_setp_1_3">Business Setup: Setp 1/3</string>
+    <string name="choose_party">Choose Party</string>
+    <string name="amount">Amount</string>
+    <string name="party_name_contact">Party Name (Contact)</string>
+    <string name="remark_item_person_name_quantitty">Remark (Item, Person Name, Quantitty...</string>
+    <string name="category">Category</string>
+    <string name="payment_mode">Payment Mode</string>
+    <string name="save">save</string>
+    <string name="business_book">Business Book</string>
+    <string name="manage_your_book_activity_etc">Manage Your Book Activity etc.</string>
+    <string name="search_by_remark_or_amount">Search by remark or amount</string>
+    <string name="net_balance">Net Balance</string>
+    <string name="cash_in">Cash In</string>
+    <string name="cash_out">Cash Out</string>
+    <string name="view_reports">VIEW REPORTS</string>
+    <string name="showing_1_entry">Showing 1 entry</string>
+    <string name="move_entry">Move Entry</string>
+    <string name="select_business">Select Business</string>
+    <string name="confirm">Confirm</string>
+    <string name="business_settings">Business Settings</string>
+    <string name="business_name">Business Name</string>
+    <string name="business_type">Business Type</string>
+    <string name="owner_name">Owner Name</string>
+    <string name="enter_owner_s_name">Enter Owner\'s Name</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="business_address">Business Address</string>
+    <string name="business_address_optional">Business Address (optional)</string>
+    <string name="update">Update</string>
+    <string name="add_cash_in_entry">Add Cash In Entry</string>
+    <string name="select_app_language">Select App Language</string>
+    <string name="english">English</string>
+    <string name="hindi">Hindi</string>
+    <string name="punjabi">Punjabi</string>
+    <string name="choose_categories">Choose Categories</string>
+    <string name="categories_in_this_book">Categories in this book</string>
+    <string name="done">Done</string>
+    <string name="add_new_party">Add New Party</string>
+    <string name="type_to_search_and_add">Type to search and add</string>
+    <string name="added_parties_1">Added Parties (1)</string>
+    <string name="you_have_1_contacts">You Have (1) Contacts</string>
+    <string name="add_customers_and_suppliers">Add customers and suppliers</string>
+    <string name="from_contacts">From Contacts</string>
+    <string name="enter_name_amp_add"><![CDATA[Enter Name & Add]]></string>
+    <string name="enter_detials">Enter Detials</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="i_don_t_have_business">I don\'t have Business</string>
+    <string name="submit">Submit</string>
+    <string name="delete_business_book">Delete Business Book?</string>
+    <string name="are_you_sure_you_will_lose_all_entries_of_this_book_parmanently">Are you sure? You will lose all entries of this book parmanently</string>
+    <string name="please_type_business_book_to_confirm">Please type Business Book to confirm</string>
+    <string name="book_name">Book Name</string>
+    <string name="delete">Delete</string>
+    <string name="update_book_name">Update Book Name</string>
+    <string name="enter_new_name">Enter New Name</string>
+    <string name="edit_entry">Edit Entry</string>
+    <string name="entry_details">Entry Details</string>
+    <string name="manage_your_entry_details">Manage your entry details</string>
+    <string name="share_entry">Share Entry</string>
+    <string name="parties">Parties</string>
+    <string name="partie_report">Partie Report</string>
+    <string name="net_total">Net Total</string>
+    <string name="total_entries">Total Entries</string>
+    <string name="you_gave">YOU GAVE</string>
+    <string name="you_got">YOU GOT</string>
+    <string name="select_payment_modes_or_add_new_payment_mode">Select payment modes or add new payment mode</string>
+    <string name="profile_settings">Profile Settings</string>
+    <string name="full_name">Full Name</string>
+    <string name="your_full_name">Your Full Name</string>
+    <string name="email">Email</string>
+    <string name="add_your_email_address">Add Your Email Address</string>
+    <string name="add">ADD</string>
+    <string name="skip">SKIP</string>
+    <string name="select_business_category">Select Business Category</string>
+    <string name="this_will_help_us_personalise_your_app_experience">This will help us personalise your app experience</string>
+    <string name="business_setup_setp_2_3">Business Setup: Setp 2/3</string>
+    <string name="select_business_type">Select Business Type</string>
+    <string name="business_setup_setp_3_3">Business Setup: Setp 3/3</string>
+    <string name="welcome">Welcome!</string>
+    <string name="login_to_auto_backup_your_data_securely">Login to auto backup your data securely</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="by_creating_an_account_you_agree_to_our_terms_of_services_amp_privacy_policy"><![CDATA[By creating an account, you agree to our Terms of Services & Privacy Policy]]></string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="light_mode">Light Mode</string>
+    <string name="collect_payment_with_upi">Collect Payment with UPI</string>
+    <string name="ente_your_upi_id">Ente your UPI Id</string>
+    <string name="share_your_upi_id">Share Your UPI Id</string>
+    <string name="edit">edit</string>
+    <string name="share_upi">share Upi</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="we_have_sent_otp_to_your_mobile_number_91_9815726817_change">We have sent OTP to your mobile number +91-9815726817 | Change</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="need_help_contact_us">Need Help? Contact Us</string>
+    <string name="actions">Actions</string>
+    <string name="transfer_entry">Transfer entry</string>
+    <string name="entry_will_be_moved_to_other_book">Entry will be moved to other book</string>
+    <string name="copy_entry">Copy Entry</string>
+    <string name="entry_will_stay_in_both_books">Entry will stay in both books</string>
+    <string name="copy_opposite_entry">Copy Opposite Entry</string>
+    <string name="cash_in_entry_will_be_added_as_cash_out_entry_in_other_book_and_vice_versa">Cash In entry will be added as Cash out entry in other book and vice versa</string>
+    <string name="delete_entry">Delete Entry</string>
+    <string name="entry_will_get_deleted_permanently_there_is_no_way_to_recover">Entry will get deleted permanently. There is no way to recover</string>
+    <string name="add_new_book">Add New Book</string>
+    <string name="enter_book_name">Enter Book Name</string>
+    <string name="add_new_category">Add New Category</string>
+    <string name="category_name">Category Name</string>
+    <string name="add_manually">Add Manually</string>
+    <string name="party_name">Party Name</string>
+    <string name="mobile_number_optional">Mobile Number (Optional)</string>
+    <string name="email_optional">Email (Optional)</string>
+    <string name="party_type">Party Type</string>
+    <string name="customer">Customer</string>
+    <string name="supplier">Supplier</string>
+    <string name="add_party">Add Party</string>
+    <string name="add_new_business">Add new business</string>
+    <string name="share_bill">Share Bill</string>
+    <string name="bill">BILL</string>
+    <string name="paid_to">Paid To</string>
+    <string name="mode">Mode</string>
+    <string name="last_updated">Last Updated</string>
+    <string name="last_created">Last Created</string>
+    <string name="name_a_to_z">Name (A to Z)</string>
+    <string name="name_z_to_a">Name (Z to A)</string>
+    <string name="delete_entry_qns">Delete Entry?</string>
+    <string name="are_you_sure_you_want_to_delete_this_entry_this_can_t_e_undone">Are you sure you want to delete this entry? This can\'t e undone.</string>
+    <string name="yes_delete">yes, delete</string>
+    <string name="no">no</string>
+    <string name="my_books">My Books</string>
+    <string name="app_settings">App Settings</string>
+    <string name="notifications">Notifications</string>
+    <string name="change_language">Change Language</string>
+    <string name="dark_theme">Dark Theme</string>
+    <string name="help_amp_support"><![CDATA[Help & Support]]></string>
+    <string name="log_out">Log out</string>
+    <string name="updated_23_hours_ago">Updated 23 hours ago</string>
+    <string name="tap_to_switch_business">Tap to switch business</string>
+    <string name="add_your_first_book_to_get_started">Add your first book to get started</string>
+    <string name="setup_your_business_by_adding_new_books">Setup your business by adding \'new books\'</string>
+    <string name="add_first_book">Add first book</string>
+    <string name="whoops">Whoops...</string>
+    <string name="we_re_unable_to_find_the_data_nthat_you_re_looking_for">We\'re unable to find the data \nthat you\'re looking for</string>
+    <string name="settings">Settings</string>
+
+    <string-array name="businessTypes" translatable="false">
+        <item>Select Business</item>
+        <item>Agriculture</item>
+        <item>Construction</item>
+        <item>Education</item>
+        <item>Electronics</item>
+        <item>Financial Services</item>
+        <item>Food Restaurant</item>
+        <item>Clothes Fashion</item>
+        <item>Hardware</item>
+        <item>Jewellery</item>
+        <item>Healthcare &amp; Fitness</item>
+        <item>Kirana/Grocery</item>
+        <item>Transport</item>
+    </string-array>
+
+    <string-array name="states">
+        <item>Andhra Pardesh</item>
+        <item>Arunanchal Pardesh</item>
+        <item>Assam</item>
+        <item>Bihar</item>
+        <item>chattisgarh</item>
+        <item>goa</item>
+        <item>gujarat</item>
+        <item>haryana</item>
+        <item>himachal pardesh</item>
+        <item>jharkhand</item>
+        <item>karnatka</item>
+        <item>kerala</item>
+        <item>madhya pardesh</item>
+        <item>maharashtra</item>
+        <item>manipur</item>
+        <item>meghalaya</item>
+        <item>mizoram</item>
+
+        <item>nagaland</item>
+        <item>odisha</item>
+
+        <item>punjab</item>
+        <item>rajasthan</item>
+
+        <item>sikkim</item>
+
+        <item>tamil nadu</item>
+
+        <item>telangana</item>
+
+        <item>tripura</item>
+
+        <item>uttar pardesh</item>
+
+        <item>west bengal</item>
+
+        <item>uttrakhand</item>
+
+        <item>delhi</item>
+
+        <item>chandigarh</item>
+
+        <item>jammu and kashmir</item>
+
+        <item>ladakh</item>
+
+        <item>daman and diu</item>
+        <item>dadra and nagar haveli</item>
+        <item>lakshadweep</item>
+        <item>puducherry</item>
+        <item>andamans and nicobar islands</item>
+    </string-array>
+</resources>

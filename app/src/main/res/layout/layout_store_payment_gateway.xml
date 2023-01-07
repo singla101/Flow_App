@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp" >
+
+                <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/shape_button"
+                android:layout_weight="1"
+                app:tint="@color/blue" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/shape_button"
+                    android:layout_weight="1"
+                    app:tint="@color/blue" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/shape_button"
+                    android:layout_weight="1"
+                    app:tint="@color/blue" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/lexend_medium"
+                android:gravity="center"
+                android:text="Payment Gateway"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="15dp"
+                android:textSize="13sp"
+                android:fontFamily="@font/lexend_regular"
+                android:gravity="center"
+                android:text="Add your own Payment Gateway to your website \n(like Razorpay, Paytm Gateway, PayU ...)"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lexend_medium"
+                android:text="Razorpay"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/razorpayKey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:inputType="text"
+                android:singleLine="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/shape_textbox"
+                android:fontFamily="@font/lexend_regular"
+                android:hint="Razorpay App Key"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/razorpaySetKEy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:inputType="text"
+                android:singleLine="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/shape_textbox"
+                android:fontFamily="@font/lexend_regular"
+                android:hint="Razorpay Secret Key"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lexend_medium"
+                android:text="Paytm Gateway"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="20dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/paytmAppKey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:inputType="text"
+                android:singleLine="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/shape_textbox"
+                android:fontFamily="@font/lexend_regular"
+                android:hint="Paytm Gateway App Key"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/paytmSecretKey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:inputType="text"
+                android:singleLine="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/shape_textbox"
+                android:fontFamily="@font/lexend_regular"
+                android:hint="Paytm Gateway Secret Key"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lexend_medium"
+                android:text="PayU Money"
+                android:visibility="gone"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="20dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:inputType="text"
+                android:singleLine="true"
+                android:visibility="gone"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/shape_textbox"
+                android:fontFamily="@font/lexend_regular"
+                android:hint="PayU Gateway App Key"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:inputType="text"
+                android:singleLine="true"
+                android:visibility="gone"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/shape_textbox"
+                android:fontFamily="@font/lexend_regular"
+                android:hint="PayU Gateway Secret Key"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:padding="20dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/saveGateway"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_button"
+            android:text="Create Store"
+            android:textColor="@color/background"
+            android:fontFamily="@font/lexend_medium"/>
+
+    </LinearLayout>
+
+</LinearLayout>

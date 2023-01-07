@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    >
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/search_text"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/black"
+                android:textColor="@color/white"
+                android:hint="@string/search_by_remark_or_amount"
+                android:paddingStart="15dp"
+                android:drawableTint="@color/white"
+                android:layout_marginTop="2dp"
+                android:paddingEnd="15dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/lexend_regular"
+                android:drawableStart="@drawable/ic_search"
+                android:drawablePadding="15dp"/>
+
+            <include
+                android:id="@+id/notFound"
+                android:layout_width="match_parent"
+                android:layout_height="800dp"
+                android:layout_weight="1"
+                layout="@layout/layout_not_found"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:gravity="center"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/net_total"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/lexend_regular"/>
+
+                <TextView
+                    android:id="@+id/totalAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="04"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:gravity="end"
+                    android:fontFamily="@font/lexend_medium"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:gravity="center"
+                android:layout_height="60dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_height="60dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/net_total"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/lexend_regular"/>
+
+                    <TextView
+                        android:id="@+id/totalEnteries"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="45"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/lexend_medium"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1.5"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="#26F2555E"
+                    android:paddingEnd="10dp"
+                    android:layout_height="60dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/you_gave"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:gravity="end"
+                        android:fontFamily="@font/lexend_light"/>
+
+                    <TextView
+                        android:id="@+id/totalOut"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="45"
+                        android:textColor="#F2555E"
+                        android:textSize="16sp"
+                        android:gravity="end"
+                        android:fontFamily="@font/lexend_medium"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1.5"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_height="60dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/you_got"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:gravity="end"
+                        android:fontFamily="@font/lexend_light"/>
+
+                    <TextView
+                        android:id="@+id/totalIn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="45"
+                        android:gravity="end"
+                        android:textColor="#49B76F"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/lexend_medium"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listReports"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>

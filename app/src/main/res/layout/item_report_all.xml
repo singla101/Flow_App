@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_extra_light"
+        android:orientation="horizontal"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/nameTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gurjot Singh"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:fontFamily="@font/lexend_medium"/>
+
+            <TextView
+                android:id="@+id/dateTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fri 30 Dec 11:56 AM"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:alpha=".5"
+                android:fontFamily="@font/lexend_light"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1.5"
+            android:orientation="vertical"
+            android:gravity="bottom"
+            android:paddingEnd="10dp"
+            android:paddingBottom="10dp"
+            android:background="#26F2555E"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/totalOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#F2555E"
+                android:textSize="16sp"
+                android:gravity="end"
+                android:fontFamily="@font/lexend_medium"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1.5"
+            android:orientation="vertical"
+            android:gravity="bottom"
+            android:paddingBottom="10dp"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/totalIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:gravity="end"
+                android:textColor="#49B76F"
+                android:textSize="16sp"
+                android:fontFamily="@font/lexend_medium"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/background" />
+</LinearLayout>

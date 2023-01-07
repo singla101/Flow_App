@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/shape_card"
+    android:backgroundTint="@color/black"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:windowSoftInputMode="adjustResize"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_close"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/lexend_regular"
+            android:text="@string/add_manually"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="?android:attr/listDivider" />
+
+    <com.google.android.material.radiobutton.MaterialRadioButton
+        android:id="@+id/lastUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/last_updated"
+        android:textColor="@color/white"
+        android:paddingStart="5dp"
+        android:fontFamily="@font/lexend_regular"/>
+
+    <com.google.android.material.radiobutton.MaterialRadioButton
+        android:id="@+id/lastCreated"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:fontFamily="@font/lexend_regular"
+        android:paddingStart="5dp"
+        android:text="@string/last_created"
+        android:textColor="@color/white" />
+
+    <com.google.android.material.radiobutton.MaterialRadioButton
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/name_a_to_z"
+        android:textColor="@color/white"
+        android:paddingStart="5dp"
+        android:fontFamily="@font/lexend_regular"/>
+
+    <com.google.android.material.radiobutton.MaterialRadioButton
+        android:id="@+id/netBalance"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/name_z_to_a"
+        android:textColor="@color/white"
+        android:paddingStart="5dp"
+        android:fontFamily="@font/lexend_regular"/>
+
+    <com.google.android.material.radiobutton.MaterialRadioButton
+        android:id="@+id/netBalancelow"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:text="Net Balance (Low to High)"
+        android:textColor="@color/white"
+        android:paddingStart="5dp"
+        android:fontFamily="@font/lexend_regular"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="?android:attr/listDivider" />
+
+
+</LinearLayout>

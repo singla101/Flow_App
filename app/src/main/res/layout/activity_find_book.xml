@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".FindBookActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingStart="20dp"
+        android:background="@color/black"
+        android:gravity="center"
+        android:paddingEnd="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:layout_gravity="center"
+            app:tint="@color/white" />
+
+        <EditText
+            android:id="@+id/search_text"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:inputType="text"
+            android:singleLine="true"
+            android:hint="@string/search_by_remark_or_amount"
+            android:paddingStart="15dp"
+            android:drawableTint="@color/white"
+            android:paddingEnd="15dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/lexend_regular"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="15dp"/>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/notFound"
+        layout="@layout/layout_not_found"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/boooks"
+        android:layout_width="match_parent"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
